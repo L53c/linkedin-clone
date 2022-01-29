@@ -26,8 +26,6 @@ const Header = () => {
   
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
-
-  console.log(`Current theme is: ${theme}`);
   
   return (
     <header className={`sticky top-0 z-40 ${resolvedTheme === 'dark' ? "bg-[#1D2226]" : "bg-white"} flex items-center justify-around py-1.5 px-3 mb-5 focus-whithin:shadow-lg`}>

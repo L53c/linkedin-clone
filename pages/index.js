@@ -13,7 +13,7 @@ import { connectToDatabase } from "../util/mongodb";
 import Widgets from "../components/Widgets";
 
 export default function Home({ posts, articles }) {
-console.log('me ca',articles);
+
   const { resolvedTheme } = useTheme();
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
